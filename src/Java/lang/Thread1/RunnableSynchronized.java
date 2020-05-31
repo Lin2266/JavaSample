@@ -4,10 +4,10 @@ package Java.lang.Thread1;
 //synchronized(同步)可以讓其它執行緒不得維護balance這個物件變數的方法有四種:
 class WithDraw implements Runnable{
     //被synchronized(同步)鎖定的屬性最好是設為private
-    private Account account;
+    private Account1 account;
     private double withdrawMoney;//提款金額
 
-    public WithDraw(Account account, double withdrawMoney) {
+    public WithDraw(Account1 account, double withdrawMoney) {
         this.account = account;
         this.withdrawMoney = withdrawMoney;
     }
@@ -18,7 +18,7 @@ class WithDraw implements Runnable{
         //synchronized()小括號中鎖定的變數必須是參考型別，只能有一個物件
 //        synchronized (account){//鎖定account物件也可以
          //4.class literals synchronized類別文字同步
-        synchronized (Account.class){
+        synchronized (Account1.class){
         //提款動作從這邊開始
             account.withDraw(account, withdrawMoney);//執行提款
        }
@@ -26,18 +26,18 @@ class WithDraw implements Runnable{
    
 }
 
-class Account{
+class Account1{
 //    private double balance;
     //例子3.類別方法同步
     static double balance;
 
-    public Account(double balance) {
+    public Account1(double balance) {
         this.balance = balance;
     }
     
     //3.static method synchronized 類別方法同步,在方法加上synchronized static
     //1.instance method synchronized(同步)旗標，在方法加上synchronized修飾詞
-    public void  withDraw(Account account,double withdrawMoney){//開始鎖定this物件的時間
+    public void  withDraw(Account1 account,double withdrawMoney){//開始鎖定this物件的時間
         String tName = Thread.currentThread().getName();
         System.out.println(tName + "開始提款...");
         //2.instance block synchronized(區段同步)，鎖定物件和鎖定期間，有兩個好處:
@@ -76,7 +76,7 @@ class Account{
 //神奇的機器
 public class RunnableSynchronized {
     public static void main(String[] args) {
-        Account ac = new Account(10000);
+        Account1 ac = new Account1(10000);
         System.out.println("帳戶原始金額:" + ac.checkAccount() + "元");
        
 //        WithDraw w1 = new WithDraw(ac, 5000);

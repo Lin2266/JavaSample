@@ -42,24 +42,20 @@ public class Exception1 {
     	// try-catch中，try區塊只能一個，但catch區塊可以很多個
         try {
             //安置可能會發生例外的程式碼
+        	 //繼承
+            Son s = new Son();
+            s.amethod();
         	
-        } 
-        //catch類別有繼承關係，必須先寫子類別在父類，沒直係關係可以任意擺放
+        }//catch類別有繼承關係，必須先寫子類別在父類，沒直係關係可以任意擺放
         catch (FileNotFoundException fn) { //子
            //Exception例外發生時的錯誤處理，當執行時會將所擷取到的錯誤狀態封裝在fn物件變數中
         	System.out.println(fn);
         } catch (IOException io) {//父、子
-            
+            System.out.println(io);
         } catch (Exception e) {//父
             
         }
-        
-        //繼承
-        Son s = new Son();
-        try {
-            s.amethod();
-        } catch (IOException e) {
-        }
+
     }
 
 }
