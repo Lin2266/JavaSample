@@ -2,8 +2,6 @@ package flowControl_if_for;
 
 import java.util.Scanner;
 
-import com.sun.glass.ui.CommonDialogs.Type;
-
 public class If_else7 {
 
 	public static void main(String[] args) {

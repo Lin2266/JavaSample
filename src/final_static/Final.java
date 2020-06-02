@@ -1,7 +1,6 @@
 
 package final_static;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 /*
 2.final：相當於常數，用來修飾類別、方法、變數(屬性/區域變數)。
