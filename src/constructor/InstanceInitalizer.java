@@ -28,6 +28,7 @@ public class InstanceInitalizer {
     }
     public static void main(String[] args) {
         new InstanceInitalizer().getInfo();
+        System.out.println("========================");
         new InstanceInitalizer(100).getInfo();
     }
     
