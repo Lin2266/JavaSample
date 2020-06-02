@@ -2,7 +2,7 @@
 package constructor;
 //繼承關係下的建構子
 public class DefaultConstructor2 {
-    class Father{
+    static class Father{
         //編譯時會產生預設建構子，所以必須看成以下:
         public Father() {
             System.out.println("父");
@@ -29,7 +29,7 @@ public class DefaultConstructor2 {
         
     }
     public static void main(String[] args) {
-            Son son = new Son();
+    	Son son = new Son();
         
     }
     

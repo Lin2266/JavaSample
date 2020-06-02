@@ -2,7 +2,7 @@
 package constructor;
 //this & super 關係
 public class Constructor5 {
-    class Father{
+    static class Father{
 
         public Father(char c) {
             //這邊接到子類的參數('父')會打印出來

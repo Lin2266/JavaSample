@@ -2,7 +2,7 @@
 package constructor;
 
 public class Constructor4 {
-    class Father{
+    static class Father{
         //有帶參數
         public Father(char c) {
             System.out.println(c);

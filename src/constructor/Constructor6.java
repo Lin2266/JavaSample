@@ -2,7 +2,7 @@
 package constructor;
 //this & super 在屬性/方法上的應用
 public class Constructor6 {
-    class Father{
+    static class Father{
         public int money = 8000000;
         //事業
         public void undertaking(){
