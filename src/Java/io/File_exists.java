@@ -26,22 +26,23 @@ File(String pathname)			pathname:可以是一個路徑字串，檔案夾名稱�
 File(String parent, String child)	parent:路徑字串;child:檔名字串
 
 */
-public class File1 {
+public class File_exists {
 
     public static void main(String[] args) {
         //f是目前所在目錄下的NewFile.txt
-        File f = new File("src/Java/io/NewFile.txt");//src為MyJava裡的目錄，路徑有套件時.要換/
+        File f = new File("src/Java/io/NewFile3.txt");//src為MyJava裡的目錄，路徑有套件時.要換/
         System.out.println("檔案是否存在？" + f.exists());//exists()判斷檔案或目錄是否存在
         //如果檔案不存在
         if(!f.exists()){
             System.out.println("利用 createNewFile() 建立新檔案，是否建立成功？");
             try {
                 System.out.println(f.createNewFile());//指定目錄下建立新檔
+                System.out.println("檢查新建檔案是否存在？" + f.exists());
             } catch (IOException e) {
                 System.out.println(e);
             }
         }
-        System.out.println("檢查新建檔案是否存在？" + f.exists());
+        
     }
     
 }
