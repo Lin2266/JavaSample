@@ -6,7 +6,7 @@ public class StaticClass {
     public static void main(String[] args) {
        MyOuter3.MyStatic s = new MyOuter3.MyStatic();
        s.fooA();
-       //s.fooB()沒辦法呼叫
+       s.fooB();
        MyOuter3.MyStatic.fooB();//static用類別直接呼叫就可以了，要用這種方法叫
         
     }

@@ -14,6 +14,7 @@ public class RegularInnerClass{
         MyOuter.MyInner in2 = new MyOuter().new MyInner();//一般類別
         //MyOuter.MyInner in3 = new MyOuter().MyInner();//static內部類別
         in2.foo();
+       
         //例3
         new MyOuter().new MyInner().foo();
         

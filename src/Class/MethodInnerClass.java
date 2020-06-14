@@ -1,5 +1,7 @@
 
 package Class;
+
+
 //方法類別
 public class MethodInnerClass {
 

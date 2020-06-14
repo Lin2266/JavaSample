@@ -11,26 +11,31 @@ public final class Final {//類別
 	final int val=0;//屬性
     
     public Final() {
-        final int val;
+        final int val;//建構子
         val = 1;
-        System.out.println(val);
+        System.out.print("呼叫建構子:" + val +",");
     }
-    void amethod(final int val) {
-        System.out.println(val);       
+    
+    final void amethod1(int val) {//方法
+        System.out.println("呼叫方法" + val);       
     }
-    int amethod1(){//區域變數
+    
+    void amethod2(final int val) {//方法參數
+        System.out.println("呼叫方法" + val);       
+    }
+    
+    int amethod(){//區域變數
         final int val;
         val = 2;
-        System.out.println(val);
+        System.out.println("呼叫方法" + val);
         return val;
     }
     
     public static void main(String[] args) {
         
-        new Final().amethod1();
+    	new Final().amethod1(5);
+        new Final().amethod2(10);
+        new Final().amethod();
     }
     
 }
-//class Fina2 extends Final{
-//	
-//}
