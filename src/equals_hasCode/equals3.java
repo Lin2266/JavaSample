@@ -11,8 +11,8 @@ public class equals3 {
 
     public static void main(String[] args) {
         //範例一new出來的都是獨立的，參考不一樣的參考值，跟Integer.valueOf()不一樣
-        Integer a1 = new Integer(130);
-        Integer b1 = new Integer(130);
+        Integer a1 = new Integer(127);
+        Integer b1 = new Integer(127);
         System.out.println("超出-128 ~ +127範圍:a1==b1: " + (a1 == b1));//false
         System.out.println("a1.equals(b1): " + a1.equals(b1));//true
        
