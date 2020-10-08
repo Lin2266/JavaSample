@@ -27,9 +27,9 @@ public class Stack1 {
         Stack<String> st = new Stack<>();
         
         //堆疊依序壓入三元素物件
-        String c1 = "301"; st.push(c1);//推
-        String c2 = "101"; st.push(c2);
-        String c3 = "201"; st.push(c3);
+        String c1 = "101"; st.push(c1);//推
+        String c2 = "201"; st.push(c2);
+        String c3 = "301"; st.push(c3);
         
         //堆疊依序彈出三元素物件
         String e1 = st.pop();
