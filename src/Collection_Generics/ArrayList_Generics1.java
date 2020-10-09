@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class ArrayList_Generics1 {
-    static class Name implements Comparable<Name>{
+     class Name implements Comparable<Name>{
         String first,last;
         Name(String first,String last){
             this.first = first;
@@ -18,15 +18,15 @@ public class ArrayList_Generics1 {
             return cmpLast != 0 ? cmpLast:first.compareTo(n.first);
         }
         public String toString(){
-            return first + "" + last;
+            return first + "-" + last;
         }
     }
 
     public static void main(String[] args) {
         ArrayList<Name> list = new ArrayList<Name>();
-        list.add(new Name("Joe","Shome"));
-        list.add(new Name("John","Doe"));
-        list.add(new Name("Jane","Doe"));
+        list.add(new ArrayList_Generics1().new Name("Joe","Shome"));
+        list.add(new ArrayList_Generics1().new Name("John","Doe"));
+        list.add(new ArrayList_Generics1().new Name("Jane","Doe"));
         Collections.sort(list);
         for (Name n : list) {
             System.out.println(n);
