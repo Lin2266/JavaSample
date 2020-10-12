@@ -1,10 +1,11 @@
+package Java.sql;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TestClass {
+public class ClassForName {
 	public void method(){
 		int a = 0;
 		if(a == 1){
@@ -17,7 +18,7 @@ public class TestClass {
 	}
 	
 	public static void main(String[] args){
-		new TestClass().method();
+		new ClassForName().method();
 		
 		try {
 			Class.forName("org.h2.Driver");

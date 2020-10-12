@@ -30,7 +30,7 @@ public class File_exists {
 
     public static void main(String[] args) {
         //f是目前所在目錄下的NewFile.txt
-        File f = new File("src/Java/io/NewFile3.txt");//src為MyJava裡的目錄，路徑有套件時.要換/
+        File f = new File("src/Java/io/NewFile3.txt");//src為JavaSample裡的目錄，路徑有套件時.要換/
         System.out.println("檔案是否存在？" + f.exists());//exists()判斷檔案或目錄是否存在
         //如果檔案不存在
         if(!f.exists()){

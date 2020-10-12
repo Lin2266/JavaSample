@@ -40,7 +40,7 @@ class AddInt implements Serializable {
 
     public void calc(int... c) {//計算
         for (int i = 0; i < c.length; i++) {
-            sum += c[i];
+            System.out.println(sum += c[i]);
         }
     }
 
