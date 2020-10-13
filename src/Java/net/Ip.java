@@ -5,6 +5,7 @@ import java.net.InetAddress;
 public class Ip {
 
 	public static void main(String[] args) {
+		//取得本機IP
 		try{
 		      InetAddress ownIP=InetAddress.getLocalHost();
 		      System.out.println("IP of my system is := "+ownIP.getHostAddress());

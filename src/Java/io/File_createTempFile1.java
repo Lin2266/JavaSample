@@ -23,11 +23,11 @@ public class File_createTempFile1 {
 		File f=null;
 		try{
 			//creates temporary(臨時) file
-			f = File.createTempFile("tmp", ".txt");
+			f = File.createTempFile("tmp", ".txt", new File("src/Java/io/"));
 			//prints absolute(絕對) path
 			System.out.println("File path:"+ f.getAbsolutePath());
 			//副檔名沒加會自動加.tmp
-			f = File.createTempFile("abc",null);
+			f = File.createTempFile("abc",null, new File("src/Java/io/"));
 			System.out.println("File path:"+ f.getAbsolutePath());
 		}catch (Exception e) {
 			System.out.println("參數不正確或檔案建立失敗"+ e);

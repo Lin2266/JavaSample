@@ -1,6 +1,11 @@
 package Java.io;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.Serializable;
+
 
 /*
  Serializable序列化:
@@ -39,11 +44,32 @@ class AddInt implements Serializable {
     //因為sum沒有被序列化，所以得到的只是sum的初始值
 
     public void calc(int... c) {//計算
+    	File f=null;
+    	BufferedWriter bw =null;
+		try{
+			//creates temporary(臨時) file
+			f = File.createTempFile("tmp", ".txt", new File("src/Java/io/"));
+			
+			//prints absolute(絕對) path
+			System.out.println("File path:"+ f.getAbsolutePath());
+			bw = new BufferedWriter(new FileWriter(f));
         for (int i = 0; i < c.length; i++) {
             System.out.println(sum += c[i]);
+            bw.write("transient:" + sum +"\n");//因為是字串串接，所以會被寫到檔案
+            bw.write( sum );//此行不會被寫進檔案
+            System.out.println();
         }
-    }
-
+    }catch (IOException e) {
+		System.out.println("寫檔失敗");
+	}finally {
+		try {
+			bw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+    }	
     public int getSum() {
         return sum;
     }
