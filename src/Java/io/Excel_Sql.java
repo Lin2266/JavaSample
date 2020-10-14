@@ -5,9 +5,9 @@ import java.sql.*;
 
 import org.apache.poi.hssf.usermodel.*;
 
-public class MySql2Excel {
+public class Excel_Sql {
 	
-	public MySql2Excel() throws Exception
+	public Excel_Sql() throws Exception
 	{
 	Connection con = null ;
 	DBConnection db = new DBConnection() ;
@@ -33,7 +33,7 @@ public class MySql2Excel {
 	for(int j= 0 ;j<CountColumnNum; j++ ){
 	firstcell[j] = firstrow.createCell((short)j);//建立第0行的欄位
 	firstcell[j].setCellValue(new HSSFRichTextString(names[j]));//寫入標題
-	System.out.printf("%-15s",names[j]);//-向左靠齊，中間隔15個字的距離
+	System.out.printf("%-15s",names[j]);//印出來做排序，-向左靠齊，中間隔15個字的距離
 	}
 	System.out.println();
 	while(rs.next()){
@@ -62,7 +62,7 @@ public class MySql2Excel {
 	public static void main(String[] args){
 		try {
 			@SuppressWarnings("unused")
-			MySql2Excel excel = new MySql2Excel() ;
+			Excel_Sql excel = new Excel_Sql() ;
 		} catch (Exception e) {
 			System.out.println("資料庫匯出失敗");
 		}
