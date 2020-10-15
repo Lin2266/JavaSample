@@ -2,13 +2,13 @@ package Java.io;
 
 import java.util.Date;
 
-public class Excel_Invoices {
+public class Invoices {
 	Integer itemId;
 	String itemName;
 	Integer itemQty;
 	Double totalPrice;
 	Date itemSoldDate;
-	public Excel_Invoices(Integer intmId, String itemName, Integer itemQty, Double totalPrice, Date itemSoldDate) {
+	public Invoices(Integer intmId, String itemName, Integer itemQty, Double totalPrice, Date itemSoldDate) {
 		super();
 		this.itemId = intmId;
 		this.itemName = itemName;
