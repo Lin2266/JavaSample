@@ -26,6 +26,7 @@ public class Scanner4 {
                 System.out.println("你猜得太小囉！");
             }    
         } while (true);
+        scanner.close();
     }
     
 }

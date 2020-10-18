@@ -14,9 +14,6 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFFont;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
@@ -95,7 +92,7 @@ public class ExcelCreateInvoice {
 	}
 	
 	private static ArrayList<Invoices> createData() throws ParseException{
-		ArrayList<Invoices> a = new ArrayList();
+		ArrayList<Invoices> a = new ArrayList<>();
 		a.add(new Invoices(1,"Book", 2, 10.0, new SimpleDateFormat("mm/dd/yyyy").parse("01/01/2020")));
 		a.add(new Invoices(2,"Table", 1, 50.0, new SimpleDateFormat("mm/dd/yyyy").parse("01/02/2020")));
 		a.add(new Invoices(3,"Lamp", 5, 100.0, new SimpleDateFormat("mm/dd/yyyy").parse("01/01/2020")));
