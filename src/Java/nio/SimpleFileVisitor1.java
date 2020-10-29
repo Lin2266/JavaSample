@@ -32,7 +32,7 @@ public class SimpleFileVisitor1 extends SimpleFileVisitor<Path>{
     
     SimpleFileVisitor1(){
         //取得PathMatcher實體並設定glob，在指定目錄下檔案的副檔名是設定的這些，全部都要取出
-        matcher = FileSystems.getDefault().getPathMatcher("glob:*.{htm,txt,xml}");
+        matcher = FileSystems.getDefault().getPathMatcher("glob:*.{htm,txt,xml,java}");
     }
     //搜尋
     private void search(Path file){
@@ -54,7 +54,7 @@ public class SimpleFileVisitor1 extends SimpleFileVisitor<Path>{
 
     public static void main(String[] args) throws IOException {
         //搜尋檔案跟完整路徑
-        Files.walkFileTree(Paths.get("E:/LIN"), new SimpleFileVisitor1());
+        Files.walkFileTree(Paths.get("F:/JAVA_C/LIN/"), new SimpleFileVisitor1());
     }
     
 }

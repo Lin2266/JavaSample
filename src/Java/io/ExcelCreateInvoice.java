@@ -81,7 +81,7 @@ public class ExcelCreateInvoice {
 		}
 		Sheet sh2 = workbook.createSheet("Second");
 		//write the output to file將輸出寫入文件
-		FileOutputStream fileOut = new FileOutputStream("src/Java/io/invoices.xlsx");
+		FileOutputStream fileOut = new FileOutputStream("src/LIN/invoices.xlsx");
 		workbook.write(fileOut);
 		fileOut.close();
 		workbook.close();

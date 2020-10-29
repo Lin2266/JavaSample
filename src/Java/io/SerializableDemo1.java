@@ -48,7 +48,7 @@ class AddInt implements Serializable {
     	BufferedWriter bw =null;
 		try{
 			//creates temporary(臨時) file
-			f = File.createTempFile("tmp", ".txt", new File("src/Java/io/"));
+			f = File.createTempFile("tmp", ".txt", new File("src/LIN/"));
 			
 			//prints absolute(絕對) path
 			System.out.println("File path:"+ f.getAbsolutePath());

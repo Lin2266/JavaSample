@@ -18,7 +18,7 @@ public class WatchService1 {
 
     public static void main(String[] args) throws Exception {//有兩種例外
         //要監聽的目錄
-        Path dir = Paths.get("E:/LIN");
+        Path dir = Paths.get("F:/JAVA_C/LIN/");
         WatchService ws = FileSystems.getDefault().newWatchService();
         //註冊，要監聽的事件有建立、刪除、修改
         dir.register(ws,

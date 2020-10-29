@@ -52,7 +52,7 @@ public class Excel_Sql {
 	i++ ;
 	}
 	// 建立檔案輸出流，準備輸出電子表格
-	OutputStream out = new FileOutputStream("E:\\employee.xls") ;
+	OutputStream out = new FileOutputStream("src/LIN/employee.xls") ;
 	wb.write(out) ;
 	System.out.println("資料庫匯出成功") ;
 	out.close() ;	

@@ -21,11 +21,11 @@ public class BasicFileAttributes1 {
     lastModifiedTime()  FileTime    最後修改時間
 */
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("C:/Users/desktop.ini");
+        Path path = Paths.get("E:/employee.xls");
        //取得基本檔案屬性的實體
         BasicFileAttributes attr = Files.readAttributes(path, BasicFileAttributes.class);
         System.out.println(path);
-        System.out.println("size:" + attr.size());
+        System.out.println("size:" + attr.size() +" bytes");
         System.out.println("isDirectory:" + attr.isDirectory());
         System.out.println("isRegularFile:" + attr.isRegularFile());
         System.out.println("isSymbolicLink:" + attr.isSymbolicLink());

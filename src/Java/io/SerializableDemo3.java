@@ -9,7 +9,7 @@ import java.io.ObjectInputStream;
 public class SerializableDemo3 {
 
     public static void main(String[] args) {
-        String path = "src/Java/io/IntBean.ser";
+        String path = "src/LIN/IntBean.ser";
         try(FileInputStream fis = new FileInputStream(path);
             ObjectInputStream ois = new ObjectInputStream(fis);) {
             AddInt ai = (AddInt)ois.readObject();

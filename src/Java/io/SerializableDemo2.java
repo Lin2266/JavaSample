@@ -9,7 +9,7 @@ class SaverAddIntBean{
     public void write(){//寫
         AddInt ai = new AddInt();
             ai.calc(1,2,3,4); 
-        String path="src/Java/io/IntBean.ser";//沒東西寫進去
+        String path="src/LIN/IntBean.ser";//沒東西寫進去
         try(FileOutputStream fos = new FileOutputStream(path);
             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
             
