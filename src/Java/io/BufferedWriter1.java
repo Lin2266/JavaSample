@@ -18,7 +18,7 @@ public class BufferedWriter1 {
         data[0] = "\n1z0-803";
         data[1] = "1z0-804";
         try {
-            fw = new FileWriter("src/IO/NewFile.txt", true);
+            fw = new FileWriter("src/Java/io/NewFile1.txt", true);
             bw = new BufferedWriter(fw);//fw跟bw是資料串流鏈結模式
             for(int i=0;i<data.length;i++){
                 bw.write(data[i] + "\n");//這樣也可以換行
