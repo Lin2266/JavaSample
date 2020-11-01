@@ -4,26 +4,29 @@ package array;
 import java.util.Arrays;
 
 public class Array2 {
-//將陣列a資料，完全複製到陣列b
+
+	//reference與obj參照同一個物件
+    public static void getReference(String[] reference){
+        //兩種輸出陣列內容方法:
+    	//1.
+        for(String s: reference){
+            System.out.println(s + " ");
+        }  
+        //2.
+        System.out.println(Arrays.toString(reference));
+    }
     public static void main(String[] args) {
-        int[] a = {11,22,44,33,88};
-        int[] b = new int[3];
-        System.out.println("記憶體位置1:" + b);
-        
-        //方法三:Arrays.copyOf()傳回和來源陣列內容大小一樣的陣列
-        //b = Arrays.copyOf(a, a.length);
-        
-        //方法二:如果a不等於b，那麼b會建立一個int[]，a.lenght長度會複製在int[]裡面
-        if(a.length != b.length)
-            b = new int[a.length];
-        //(來源物件，int來源，目的物件，int目的, int長度(lenght)
-        System.arraycopy(a, 0, b, 0, a.length);
-        
-        
-        System.out.println("a的記憶體位置:" + a);
-        System.out.println("記憶體位置2:" + b);//b複製完會存在一個新的記憶體
-        
-        System.out.printf("b = %s \n", Arrays.toString(b));
+       String[] obj = {"Java","SCJP 7.0"};
+        getReference(obj);//傳遞obj參考值
+       
+        char[] data = new char[5];
+		//data=new char[5];這句宣告跟上面的宣告一樣，有多少個長度
+		data[0]='a';
+		data[1]='b';
+		data[2]='c';
+		data[3]='d';
+		data[4]='e';
+		System.out.println(data[1]);
     }
     
 }

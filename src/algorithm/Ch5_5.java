@@ -9,10 +9,12 @@ public class Ch5_5 {
 		for(int i=0;i<=4;i++){//利用「迴圈結構」+「陣列」可以快速的「輸入」資料
 			//輸入
 			a[i]=i*2+1;
-			System.out.println(a[i]);//利用「迴圈結構」+「陣列」可以快速的「輸出」資料
 		}
 	
-		
+		for(int i=0;i<=4;i++){//利用「迴圈結構」+「陣列」可以快速的「輸出」資料
+			//輸出
+			System.out.println(a[i]);
+		}
 
 	}
 

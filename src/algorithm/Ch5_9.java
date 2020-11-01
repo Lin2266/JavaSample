@@ -14,10 +14,7 @@ public class Ch5_9 {
 		a[4] = 90;
 		a[5] = 100;
 		//處理
-		for(int i =0;i < a.length;i++){
-			//輸入
-			num += a[i];
-		}
+		num += a[0] + a[1] + a[2] + a[3] + a[4] + a[5];
 		//輸出
 		System.out.println("6位同學的總和:" + num);
 	}
