@@ -6,10 +6,10 @@ public class File3 {
 
     public static void main(String[] args) {
         //指定檔案
-        File file = new File("src/Java/io/NewFile.txt");
-        File file2 = new File("src/Java/io/NewFile1.txt");
+        File file = new File("src/LIN/NewFile.txt");
+        File file2 = new File("src/LIN/NewFile1.txt");
         //指定目錄
-        File file3 = new File("src/Java/io/LIN");
+        File file3 = new File("src/LIN");
         //另一個File實體，檔名字串
         File file4 = new File(file3,"NewFile12.txt");
         //是不是目錄

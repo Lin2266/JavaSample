@@ -14,7 +14,7 @@ public class ObjectOutputStream1 {
     public static void main(String[] args) {
          AddInt ai = new AddInt();
             ai.calc(1,2,3,4); 
-        String path="src/Java/io/IntBean.ser";//沒東西寫進去
+        String path="src/LIN/IntBean.ser";//沒東西寫進去
         try(FileOutputStream fos = new FileOutputStream(path);
             java.io.ObjectOutputStream oos = new java.io.ObjectOutputStream(fos)) {
             

@@ -11,7 +11,7 @@ public class FileInputStream1_1 {
     public static void main(String[] args) {
           
          int totalBytes;
-         try(FileInputStream fis = new FileInputStream("src/Java/io/NewFile.txt");) {
+         try(FileInputStream fis = new FileInputStream("src/LIN/NewFile.txt");) {
             totalBytes = fis.available();//available()取得資料位元組總數多少bytes 
             System.out.println("顯示可讀取資料位元組總數:" + totalBytes + "bytes.");
             

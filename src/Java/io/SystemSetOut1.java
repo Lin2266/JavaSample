@@ -19,7 +19,7 @@ public class SystemSetOut1 {
 		try {
 			in = new InputStreamReader(System.in);//讀字符
 			br = new BufferedReader(in);
-			fos = new FileOutputStream("src/sample/OutputFile.txt");//輸出byte,預設false檔案有資料會清除
+			fos = new FileOutputStream("src/LIN/OutputFile.txt");//輸出byte,預設false檔案有資料會清除
 			bos = new BufferedOutputStream(fos);
 			//true時會讓緩衝區內的資料自動清除，否則所輸入的資料會暫留緩衝區內，導致無法即時看見輸出的結果
 			out = new PrintStream(bos,true);

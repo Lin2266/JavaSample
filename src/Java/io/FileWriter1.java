@@ -30,9 +30,10 @@ public class FileWriter1 {
         try {
             //建立物件實體並開啟NewFile.txt(檔案不存在會自動建立)
             //true會將要加入的新文字接續在原始檔案文字之後，false會將原始文字清除，新增加的文字取代
-            fw = new FileWriter("src/Java/io/NewFile2.txt", true);
+            fw = new FileWriter("src/LIN/NewFile2.txt", true);
             fw.write(data);//直接將String寫入檔案
         } catch (IOException e) {
+        	System.out.println("not fund file");
         }
         finally{
             try{

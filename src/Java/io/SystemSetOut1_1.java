@@ -18,7 +18,7 @@ public class SystemSetOut1_1 {
         try(InputStreamReader in = new InputStreamReader(System.in);//讀字符
             BufferedReader br = new BufferedReader(in);
             //更改IO介面用Stream處理，必須使用下面三個類別來作檔案的輸出處理
-            FileOutputStream fos = new FileOutputStream("src/Java/io/OutputFile.txt");
+            FileOutputStream fos = new FileOutputStream("src/LIN/OutputFile.txt");
             BufferedOutputStream bos = new BufferedOutputStream(fos);
             PrintStream out = new PrintStream(bos, true)) {
             //更改輸出裝置，將輸出裝置從原本的螢幕輸出更改成檔案輸出，把輸入的資料寫到OutputFile.txt檔中

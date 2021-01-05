@@ -7,7 +7,7 @@ import java.io.FileReader;
 public class BufferedReader1_1 {
 
     public static void main(String[] args) {
-        try(FileReader fr = new FileReader("src/IO/NewFile.txt");
+        try(FileReader fr = new FileReader("src/LIN/NewFile.txt");
             BufferedReader br = new BufferedReader(fr) ) {
             String data;
             while((data = br.readLine()) !=null){

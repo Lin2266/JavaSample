@@ -14,7 +14,7 @@ public class BufferedReader1 {
         FileReader fr = null;
         BufferedReader br = null;
         try {
-            fr = new FileReader("src/Java/io/NewFile.txt");
+            fr = new FileReader("src/LIN/NewFile.txt");
             br = new BufferedReader(fr);
             String data;
             //字元為null
