@@ -1,8 +1,10 @@
 package Java.io;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -137,13 +139,25 @@ public class BufferedOutPutStream1 implements AutoCloseable{
     }
 
 	public static void main(String[] args) {
-		BufferedOutPutStream1 bf = new BufferedOutPutStream1();
-		String[] paths = {"src/LIN/new.txt","src/LIN/new2.txt","src/LIN/NewFile2.txt"};
-		for(int i=0;i<paths.length;i++) {
-		File path = new File(paths[i]);
-		//System.out.println(path.exists());
-		bf.append(path);
+		File ars2File=null;
+		OutputStream output = null;
+		try {
+			ars2File =  File.createTempFile("Ars2-",".ars2",new File("src/LIN/"));
+			System.out.println(ars2File.getAbsolutePath());//取得檔案加路徑
+			output = new BufferedOutputStream(new FileOutputStream(ars2File));
+			
+			BufferedOutPutStream1 bf = new BufferedOutPutStream1();
+			String[] paths = {"src/LIN/new.txt","src/LIN/new2.txt","src/LIN/NewFile2.txt"};
+			for(int i=0;i<paths.length;i++) {
+			File path = new File(paths[i]);
+			//System.out.println(path.exists());
+			bf.append(path);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
 	}
 
 }
