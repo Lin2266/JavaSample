@@ -1,5 +1,5 @@
 
-package Search;
+package algorithm.search;
 
 
 /*

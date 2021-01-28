@@ -10,6 +10,7 @@ public class recursion {
         //1=1. 2+1=3. 3+3=6. 4+6=10. 5+10=15. 6+15=21. 7+21=28, 第7項在加前面6項的值(21)=28
          System.out.println(sum(7));
     }
+     //累加
     public static int sum(int n) {
         if (n == 1) {
             return 1;
