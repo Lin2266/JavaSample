@@ -2,9 +2,9 @@ package flowControl_if_for;
 
 import java.util.Scanner;
 
-import Java.lang.String1.intern;
-import final_static.Final;
-import final_static.Static;
+import Java.lang.String1.Tntern;
+import Modifier.Final;
+import Modifier.Static;
 
 public class if_else6 {
 

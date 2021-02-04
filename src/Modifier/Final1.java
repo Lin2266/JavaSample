@@ -1,4 +1,4 @@
-package final_static;
+package Modifier;
 
 public class Final1 {
 	

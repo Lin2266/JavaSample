@@ -3,7 +3,7 @@ package method;
 
 import java.util.ArrayList;
 
-public class ArrayMethod {
+public class GenericArray1 {
 	
 	static ArrayList<Integer> arraytest(int array[]) {
 		ArrayList<Integer> list = new ArrayList<>();

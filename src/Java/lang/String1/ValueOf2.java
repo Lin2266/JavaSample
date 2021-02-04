@@ -1,7 +1,7 @@
 package Java.lang.String1;
 
 
-public class valueOf {
+public class ValueOf2 {
 
     public static void main(String[] args) {
         int num = 123;

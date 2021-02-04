@@ -1,6 +1,6 @@
 package Java.lang.String1;
 
-public class intern {
+public class Tntern {
 	/*intern()(實習生)方法，可以讓你將字串放入字串池，或者是從字串池中取得JVM所維護的字串。
 	如果你呼叫它，則會使用equals()方法，比較字串池中是否有字元序列相同的字串，如果有則傳回，
 	如果無則將該字串置入字串池。

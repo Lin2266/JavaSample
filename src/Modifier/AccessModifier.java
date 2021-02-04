@@ -1,3 +1,4 @@
+package Modifier;
 
 /*
 Java的前置修飾詞(Modifier)可分為兩類，分別是：
@@ -11,7 +12,7 @@ Java的前置修飾詞(Modifier)可分為兩類，分別是：
 ２．final：相當於常數化，用於類別，方法與變數的實作。
 ３．abstract：用來建立抽像類別與方法。
 ４．synchronized：執行緒(threads)專用，代表同時只能被一個執行緒取用。
-
+5．<T>:表示是個泛型方法
 */
 public class AccessModifier {
 

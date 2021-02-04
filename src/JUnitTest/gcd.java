@@ -1,14 +1,18 @@
 package JUnitTest;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import method.Common_factor;
+import method.SquareRoot;
 
-public class gcd {
+class gcd {
 
 	@Test
-	public void test() {
+	void test() {
 		Common_factor cF = new Common_factor();
 		cF.gcd(12,18);
-		cF.abc(2);
+		
+		SquareRoot squareRoot = new SquareRoot();
+		squareRoot.abc(3);
 	}
 
 }

@@ -2,10 +2,9 @@ package method;
 
 import java.io.Console;
 
-//階層
-public class MathMethod4 {
-
-    public static long factorial(int p) /* 函式定義 */ {
+public class Factorial1 {
+	//自訂階層
+    public static long factorial(int p){
         long result = 1L;
         for (int count = 1; count <= p; count++) {
             result = result * count;

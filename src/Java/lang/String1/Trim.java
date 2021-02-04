@@ -5,7 +5,7 @@ package Java.lang.String1;
  *
  * trim()可以去除左邊及右邊二則空白，不過在字串間空白並不會處理
  */
-public class trim {
+public class Trim {
 
     public static void main(String[] args) {
         String HasEmptyStr = " ABC";

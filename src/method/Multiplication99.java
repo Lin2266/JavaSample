@@ -1,7 +1,7 @@
 package method;
 
 //無傳入引數及回傳值的函式
-public class Method99 {
+public class Multiplication99 {
 //列印九九乘法表的函式（print99函式），該函式不接受任何傳入引數，也不回傳任何資料。
 //沒有傳入引數，因此參數串列為空。由於函式不需要回傳值，所以必須將函式回傳值的資料型態設為void。
     public static void print99() // 函式定義

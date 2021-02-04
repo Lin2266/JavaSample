@@ -3,7 +3,7 @@ package method;
 import java.io.Console;
 
 //製作三個函式（Odd、Even、TotalSum函式），功能分別為計算奇數和、偶數和、整數和。
-public class MathMethod3 {
+public class Odd_even_total {
     //用來計算1+3+…+U的奇數和。（total是回傳值）
     public static int odd(int U) {
         int i, total = 0;

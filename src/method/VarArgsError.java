@@ -1,4 +1,4 @@
-package varArgs;
+package method;
 
 public class VarArgsError {
 	//Compile time error (multiple varargs )

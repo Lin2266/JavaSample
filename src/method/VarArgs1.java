@@ -1,7 +1,7 @@
-package varArgs;
+package method;
 
 public class VarArgs1 {
-	/*使用varargs作為方法定義的參數，可以傳遞數組或參數序列。如果傳遞了一系列參數，它們將自動轉換為數組。
+	/*使用varargs(可變參數)作為方法定義的參數，可以傳遞數組或參數序列。如果傳遞了一系列參數，它們將自動轉換為數組。
 	此示例顯示了一個數組和一系列傳遞給printVarArgArray()方法的參數，以及它們在方法內部代碼中的相同處理方式：*/
 	
 	// this method will print the entire contents of the parameter passed in

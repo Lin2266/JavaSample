@@ -1,5 +1,5 @@
 
-package final_static;
+package Modifier;
 
 /*
 1.static：靜態，用於內部類別、方法(methods)與變數。
