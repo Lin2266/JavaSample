@@ -14,8 +14,8 @@ public class BufferedRW1 {
 
     public static void main(String[] args) {
         //7.0以後的寫法，會自動close,就不需要加finally去執行close
-        try (BufferedReader br = new BufferedReader(new FileReader("src/LIN/Lin1.java"));
-             BufferedWriter bw = new BufferedWriter(new FileWriter("src/LIN/Lin.java"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("E:\\LIN\\Lin1.java"));
+             BufferedWriter bw = new BufferedWriter(new FileWriter("E:\\LIN\\Lin.java"))){
             String c;
             
             while ((c = br.readLine()) != null) {

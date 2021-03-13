@@ -14,7 +14,7 @@ public class FileReader1 {
        FileReader fr = null;
        
         try {
-            fr = new FileReader("src/LIN/NewFile.txt");
+            fr = new FileReader("src/IO/NewFile.txt");
             System.out.println("讀取到 NewFile.txt 檔案內容");
             System.out.println("-------------------------------");
             //這種寫法是一邊將檔案資料寫入buffer，一邊判斷是否已到檔尾

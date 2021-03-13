@@ -1,6 +1,6 @@
 package Java.lang.System;
 
-import Java.lang.String1.Tntern;
+import Java.lang.String1.intern;
 
 public class CurrentTimeMillis {
 	static void doSomeTing() {

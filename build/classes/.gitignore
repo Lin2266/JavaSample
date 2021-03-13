@@ -1,5 +1,3 @@
-/AccessModifier.class
-/Class/
 /Collection_Generics/
 /Common_factor.class
 /Composition_Aggregation/
@@ -42,8 +40,4 @@
 /tool/
 /variable/
 /習題/
-/varArgs/
-/Stock.txt
-/SquareRoot.class
-/Modifier/
-/Lambda/
+/Test.class

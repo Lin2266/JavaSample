@@ -9,7 +9,6 @@ public class Implicit_ExplicitCasting {
 		int i=1;		//將1指派給i變數(合法)，整數的字面值預設是int資料型別
 		double d=0;		//宣告double d(合法)，浮點數的字面值預設是double資料型態
 		d=i;			//隱含式轉換
-		System.out.println(d);//1.0
 		//i=d;			//不合法，大轉小要強行式轉換
 		i=(int)d;		//強行式轉換
 		float f;		//合法

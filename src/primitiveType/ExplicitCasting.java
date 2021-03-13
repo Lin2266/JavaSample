@@ -1,22 +1,39 @@
 package primitiveType;
-
+//當基本型態強制轉型溢出時
 public class ExplicitCasting {
-
+/*
+ 值域在int(含)以下的資料型別(byte，short，char)做四則運算的時候，當下運算時的資料型別會被轉成int，所以要適時地做
+ 型別轉換。
+ */
 	public static void main(String[] args) {
-		//計算國文與英文的平均成績，並依照平均成績來求顯示「及格」(含60以上)與「不及格」(60以下)
-		 
-		int chineseScore=61;
-		int englishScore=50;
-		
-		//float average = (chineseScore + englishScore) / 2; 只有型態轉型則會顯示55.0
-		float average = (float)(chineseScore + englishScore) / 2; //型態跟值都有轉型則會顯示55.5
-		System.out.println(average);
-		if(average >= 60){
-			System.out.println("合格");
-		}else{
-			System.out.println("不合格");
-		}
-
+		// 當強制轉型溢出時
+		byte b1 = 127 ;  
+//(b1+3)都要括起來，因為運算x+y型別還是int，要強制轉成byte，不然編譯時會發生精度錯誤(possible loss of perecision)
+		b1 = (byte)(b1+3) ;//130超出byte範圍  
+        System.out.println(b1);//輸出-126
+        
+        /* 公式算完時上111 1111下等於二進制的  左(下)0111 1111右(上)
+         Java中最高位是符號位，0代表正數用原碼表示，1代表負數用補碼表示，
+         0000 0000 0000 0000 0000 0000 0111 1111 轉成byte時，最高位是由左開始數第8位為0代表正數原碼
+                  加上3就變130，編碼:0000 0000 0000 0000 0000 0000 1000 0010 第8位為1時代表負數
+                  如果要取得強制轉型後的原始碼要取反+1， 1000 0010 取反變 0111 1101 +1 為 0111 1110(原碼)-126
+         */
+        
+        short s1 = 128 ;  
+        byte b2 = (byte)s1 ;  
+        System.out.println(b2);//-128
+        /*
+         128編碼 0000 0000 1000 0000 負數取原碼要取反加1，還是1000 0000 (2的8次方為128)
+         這樣就是128加上負符號，結果為-128
+         */
+        
+        byte b3 = (byte)-129 ;  
+        System.out.println(b3);//127
+        /*
+         -129編碼:1000 0000 0000 0000 0000 0000 1000 0001 (直接用129轉2進制)一樣取反加1如下
+         -129強制轉型後127原碼: 0111 1111 1111 1111 1111 1111 0111 1111 強制轉換取後8碼0111 1111 結果是127
+         */
+        
 	}
 
 }

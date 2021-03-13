@@ -19,7 +19,7 @@ public class ObjectInputStream1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       String path = "src/LIN/IntBean.ser";
+       String path = "src/Java/io/IntBean.ser";
         try(FileInputStream fis = new FileInputStream(path);
             ObjectInputStream ois = new ObjectInputStream(fis);) {
             AddInt ai = (AddInt)ois.readObject();

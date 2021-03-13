@@ -8,7 +8,7 @@ public class FileReader2 {
 
     public static void main(String[] args) {
         //7.0以後的寫法，會自動close,就不需要加finally去執行close
-        try (FileReader reader = new FileReader("src/LIN/NewFile.txt")) {
+        try (FileReader reader = new FileReader("src/Java/io/NewFile.txt")) {
             int c;
             //跑一次印出一個字，-1代表輸出結束(位元)
             while ((c = reader.read()) != -1) {
